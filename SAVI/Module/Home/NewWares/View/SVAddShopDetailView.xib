@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SVAddShopDetailView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="573"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OhF-H9-jka">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="573"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="季节列表" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ae-u1-uK7">
+                            <rect key="frame" x="176.5" y="15" width="61.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqA-3x-ThS">
+                            <rect key="frame" x="382" y="15" width="22" height="22"/>
+                            <state key="normal" image="ic_deleteDiscount"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXr-9M-qQ4">
+                            <rect key="frame" x="30" y="520" width="354" height="38"/>
+                            <color key="backgroundColor" red="0.26274509800000001" green="0.26274509800000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="RUu-NR-dAe"/>
+                                <constraint firstAttribute="height" constant="38" id="nft-B5-Y0H"/>
+                            </constraints>
+                            <state key="normal" title="新增">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" red="0.26274509800000001" green="0.26274509800000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="addShopClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="yDp-0i-H7S"/>
+                            </connections>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WoT-gn-6Lt">
+                            <rect key="frame" x="10" y="52" width="394" height="453"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="2ae-u1-uK7" firstAttribute="top" secondItem="OhF-H9-jka" secondAttribute="top" constant="15" id="1Q7-1K-fw1"/>
+                        <constraint firstItem="qXr-9M-qQ4" firstAttribute="top" secondItem="WoT-gn-6Lt" secondAttribute="bottom" constant="15" id="845-qz-DCf"/>
+                        <constraint firstAttribute="trailing" secondItem="qXr-9M-qQ4" secondAttribute="trailing" constant="30" id="9gy-WX-u6T"/>
+                        <constraint firstAttribute="bottom" secondItem="qXr-9M-qQ4" secondAttribute="bottom" constant="15" id="AGc-ft-ss0"/>
+                        <constraint firstItem="2ae-u1-uK7" firstAttribute="centerX" secondItem="OhF-H9-jka" secondAttribute="centerX" id="C4g-Pg-LFI"/>
+                        <constraint firstItem="WoT-gn-6Lt" firstAttribute="leading" secondItem="OhF-H9-jka" secondAttribute="leading" constant="10" id="Th8-nG-aRg"/>
+                        <constraint firstItem="VqA-3x-ThS" firstAttribute="top" secondItem="OhF-H9-jka" secondAttribute="top" constant="15" id="aLL-Hc-sVb"/>
+                        <constraint firstItem="WoT-gn-6Lt" firstAttribute="top" secondItem="VqA-3x-ThS" secondAttribute="bottom" constant="15" id="gzx-SS-P6z"/>
+                        <constraint firstAttribute="trailing" secondItem="WoT-gn-6Lt" secondAttribute="trailing" constant="10" id="pQ6-Q0-ZYx"/>
+                        <constraint firstItem="qXr-9M-qQ4" firstAttribute="leading" secondItem="OhF-H9-jka" secondAttribute="leading" constant="30" id="ujQ-9s-lgW"/>
+                        <constraint firstAttribute="trailing" secondItem="VqA-3x-ThS" secondAttribute="trailing" constant="10" id="ynw-iR-3ai"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="OhF-H9-jka" secondAttribute="trailing" id="Cmc-tz-NcS"/>
+                <constraint firstAttribute="bottom" secondItem="OhF-H9-jka" secondAttribute="bottom" id="EM0-DU-a3z"/>
+                <constraint firstItem="OhF-H9-jka" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iPz-5k-4Gv"/>
+                <constraint firstItem="OhF-H9-jka" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="jpu-tU-hGb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addBtn" destination="qXr-9M-qQ4" id="gjT-AV-YeS"/>
+                <outlet property="cancle" destination="VqA-3x-ThS" id="N1U-AD-UBe"/>
+                <outlet property="tableView" destination="WoT-gn-6Lt" id="1Q4-rF-jYH"/>
+                <outlet property="titleDetail" destination="2ae-u1-uK7" id="NVS-13-D98"/>
+            </connections>
+            <point key="canvasLocation" x="-65" y="-97"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_deleteDiscount" width="22" height="22"/>
+    </resources>
+</document>

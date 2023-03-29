@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="KGk-i7-Jjw" customClass="SVnewDraftCell">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="81.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="盘点单号：2019-001" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zN0-AI-je9">
+                        <rect key="frame" x="10" y="10" width="134" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.2627124488" green="0.2627638578" blue="0.26270923019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="盘点人：张三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSp-Sc-0AO">
+                        <rect key="frame" x="10" y="37" width="86" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019-04-20 20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKh-is-md4">
+                        <rect key="frame" x="282.5" y="37" width="100.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="共1种商品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Osg-xS-4cg">
+                        <rect key="frame" x="319.5" y="10" width="63.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.2627124488" green="0.2627638578" blue="0.26270923019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zN0-AI-je9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="3EH-EL-lG8"/>
+                    <constraint firstAttribute="trailing" secondItem="lKh-is-md4" secondAttribute="trailing" constant="10" id="BUt-86-Lur"/>
+                    <constraint firstItem="Osg-xS-4cg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="FT7-Fu-Rh6"/>
+                    <constraint firstAttribute="trailing" secondItem="Osg-xS-4cg" secondAttribute="trailing" constant="10" id="UMI-yB-Wta"/>
+                    <constraint firstItem="lKh-is-md4" firstAttribute="top" secondItem="Osg-xS-4cg" secondAttribute="bottom" constant="10" id="Wv2-Se-TBS"/>
+                    <constraint firstItem="zN0-AI-je9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Ydq-JO-PkN"/>
+                    <constraint firstItem="RSp-Sc-0AO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="cLa-ah-NKb"/>
+                    <constraint firstItem="RSp-Sc-0AO" firstAttribute="top" secondItem="zN0-AI-je9" secondAttribute="bottom" constant="10" id="rri-Ie-cl6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameL" destination="RSp-Sc-0AO" id="YjJ-Kg-fdb"/>
+                <outlet property="pandiandanhao" destination="zN0-AI-je9" id="auG-1N-kac"/>
+                <outlet property="shopNum" destination="Osg-xS-4cg" id="6Gi-uV-Dsf"/>
+                <outlet property="timeL" destination="lKh-is-md4" id="xOL-UG-4kP"/>
+            </connections>
+            <point key="canvasLocation" x="189.59999999999999" y="147.52623688155924"/>
+        </tableViewCell>
+    </objects>
+</document>

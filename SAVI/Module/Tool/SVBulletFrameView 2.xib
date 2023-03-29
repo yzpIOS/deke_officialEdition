@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SVBulletFrameView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="259"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1B7-Y6-5Zr">
+                    <rect key="frame" x="30" y="189" width="354" height="50"/>
+                    <color key="backgroundColor" red="0.53457158800000004" green="0.59760624169999998" blue="0.9456278682" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="qop-Gh-ZBx"/>
+                    </constraints>
+                    <state key="normal" title="暂停">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否暂停该供应商" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1C-YE-fpn">
+                    <rect key="frame" x="137.5" y="99.5" width="139" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ic0-oV-Gad">
+                    <rect key="frame" x="370" y="20" width="24" height="24"/>
+                    <state key="normal" image="clean"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="R1C-YE-fpn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-20" id="0dj-Xu-x1c"/>
+                <constraint firstAttribute="trailing" secondItem="Ic0-oV-Gad" secondAttribute="trailing" constant="20" id="Bhq-7I-20z"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1B7-Y6-5Zr" secondAttribute="bottom" constant="20" id="OMZ-io-ppb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1B7-Y6-5Zr" secondAttribute="trailing" constant="30" id="UHB-IT-NkF"/>
+                <constraint firstItem="1B7-Y6-5Zr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="c6C-ab-LIL"/>
+                <constraint firstItem="R1C-YE-fpn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="crs-L7-Osk"/>
+                <constraint firstItem="Ic0-oV-Gad" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="wbJ-O2-3JU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cleanBtn" destination="Ic0-oV-Gad" id="SzG-mH-wOE"/>
+                <outlet property="stopBtn" destination="1B7-Y6-5Zr" id="8sb-1C-xF5"/>
+                <outlet property="titleLabel" destination="R1C-YE-fpn" id="QeV-5t-X1B"/>
+            </connections>
+            <point key="canvasLocation" x="17.39130434782609" y="78.013392857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="clean" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

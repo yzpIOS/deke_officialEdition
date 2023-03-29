@@ -1,0 +1,25 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+<<<<<<< HEAD
+      "filename" : "goodsmanage_jinggao_icon@2x.png",
+=======
+      "filename" : "mine_newVersion@2x.png",
+>>>>>>> 83460cf... oem 资源文件
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

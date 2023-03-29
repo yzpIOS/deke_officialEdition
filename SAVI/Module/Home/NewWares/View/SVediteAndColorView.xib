@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SVediteAndColorView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TfK-HQ-jaA">
+                    <rect key="frame" x="5" y="0.0" width="365" height="36.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edite" translatesAutoresizingMaskIntoConstraints="NO" id="gNh-m6-hdN">
+                            <rect key="frame" x="10" y="11.5" width="14" height="14"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="编 辑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUi-0d-GSQ">
+                            <rect key="frame" x="163" y="8" width="39.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.17647058823529413" green="0.56470588235294117" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="gNh-m6-hdN" firstAttribute="centerY" secondItem="TfK-HQ-jaA" secondAttribute="centerY" id="7dk-5A-w1d"/>
+                        <constraint firstItem="zUi-0d-GSQ" firstAttribute="centerX" secondItem="TfK-HQ-jaA" secondAttribute="centerX" id="dDz-98-eoe"/>
+                        <constraint firstItem="zUi-0d-GSQ" firstAttribute="centerY" secondItem="TfK-HQ-jaA" secondAttribute="centerY" id="jww-YZ-XTH"/>
+                        <constraint firstItem="gNh-m6-hdN" firstAttribute="leading" secondItem="TfK-HQ-jaA" secondAttribute="leading" constant="10" id="oJA-a8-7xn"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TH9-q5-Ha4">
+                    <rect key="frame" x="5" y="37" width="365" height="37"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delete_moreColor" translatesAutoresizingMaskIntoConstraints="NO" id="74Q-Jx-ERy">
+                            <rect key="frame" x="10" y="10.5" width="16" height="16"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="删 除" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzV-DI-gim">
+                            <rect key="frame" x="162.5" y="8" width="40" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.99215686270000003" green="0.4039215686" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="KzV-DI-gim" firstAttribute="centerX" secondItem="TH9-q5-Ha4" secondAttribute="centerX" id="91A-6F-sDS"/>
+                        <constraint firstItem="74Q-Jx-ERy" firstAttribute="centerY" secondItem="TH9-q5-Ha4" secondAttribute="centerY" id="NWW-yF-gDW"/>
+                        <constraint firstItem="74Q-Jx-ERy" firstAttribute="leading" secondItem="TH9-q5-Ha4" secondAttribute="leading" constant="10" id="kOJ-8z-dqK"/>
+                        <constraint firstItem="KzV-DI-gim" firstAttribute="centerY" secondItem="TH9-q5-Ha4" secondAttribute="centerY" id="r6T-VX-wWh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TfK-HQ-jaA" secondAttribute="trailing" constant="5" id="7iM-cD-UVM"/>
+                <constraint firstItem="TH9-q5-Ha4" firstAttribute="top" secondItem="TfK-HQ-jaA" secondAttribute="bottom" constant="0.5" id="aap-f9-7gC"/>
+                <constraint firstItem="TfK-HQ-jaA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="bJE-3e-HOB"/>
+                <constraint firstItem="TfK-HQ-jaA" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1:2" constant="-0.5" id="fXT-Wc-bfY"/>
+                <constraint firstItem="TfK-HQ-jaA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="q71-gP-HXq"/>
+                <constraint firstAttribute="bottom" secondItem="TH9-q5-Ha4" secondAttribute="bottom" id="ve6-Fo-JY8"/>
+                <constraint firstAttribute="trailing" secondItem="TH9-q5-Ha4" secondAttribute="trailing" constant="5" id="xf2-m2-Om7"/>
+                <constraint firstItem="TH9-q5-Ha4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="zgd-wU-RiM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="deleteView" destination="TH9-q5-Ha4" id="6jD-Gv-3cC"/>
+                <outlet property="editView" destination="TfK-HQ-jaA" id="1eD-HF-CZH"/>
+            </connections>
+            <point key="canvasLocation" x="165.59999999999999" y="321.13943028485761"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete_moreColor" width="16" height="16"/>
+        <image name="edite" width="14" height="14"/>
+    </resources>
+</document>

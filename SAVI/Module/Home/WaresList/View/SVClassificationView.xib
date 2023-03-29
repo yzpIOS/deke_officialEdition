@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SVClassificationView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="478"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EuM-rM-QPo">
+                    <rect key="frame" x="0.0" y="0.0" width="207" height="417"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fi-zj-NEb">
+                    <rect key="frame" x="0.0" y="418" width="414" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Pr-XL-WFc">
+                            <rect key="frame" x="26" y="16" width="30" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="清空">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cleanClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="y6b-hZ-I3O"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUd-Y4-Rs1">
+                            <rect key="frame" x="299" y="11" width="100" height="38"/>
+                            <color key="backgroundColor" red="0.32156862749999998" green="0.4549019608" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="CfH-oW-PZS"/>
+                                <constraint firstAttribute="height" constant="38" id="GZm-SF-7Fm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="确认">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="confirmClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="qlT-3R-DqP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g36-mv-ENL">
+                            <rect key="frame" x="184" y="11" width="100" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="c4H-pa-isb"/>
+                                <constraint firstAttribute="width" constant="100" id="m8K-g1-Ofz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="分类管理">
+                                <color key="titleColor" red="0.95294117649999999" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="2xr-P7-Tn1"/>
+                        <constraint firstAttribute="trailing" secondItem="JUd-Y4-Rs1" secondAttribute="trailing" constant="15" id="6Sh-XF-vzM"/>
+                        <constraint firstItem="JUd-Y4-Rs1" firstAttribute="leading" secondItem="g36-mv-ENL" secondAttribute="trailing" constant="15" id="dLX-a4-uFk"/>
+                        <constraint firstItem="JUd-Y4-Rs1" firstAttribute="centerY" secondItem="4fi-zj-NEb" secondAttribute="centerY" id="oS8-XS-UOM"/>
+                        <constraint firstItem="g36-mv-ENL" firstAttribute="centerY" secondItem="4fi-zj-NEb" secondAttribute="centerY" id="zpa-xA-vN2"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O2w-29-Kt0">
+                    <rect key="frame" x="207" y="0.0" width="207" height="417"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="O2w-29-Kt0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0U2-Zz-LdB"/>
+                <constraint firstItem="O2w-29-Kt0" firstAttribute="leading" secondItem="EuM-rM-QPo" secondAttribute="trailing" id="9aR-5Z-7OA"/>
+                <constraint firstItem="EuM-rM-QPo" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1:2" id="ByY-j3-VpW"/>
+                <constraint firstItem="4fi-zj-NEb" firstAttribute="top" secondItem="EuM-rM-QPo" secondAttribute="bottom" constant="1" id="Fes-z7-bQo"/>
+                <constraint firstAttribute="trailing" secondItem="4fi-zj-NEb" secondAttribute="trailing" id="KuD-w1-lzs"/>
+                <constraint firstAttribute="bottom" secondItem="4fi-zj-NEb" secondAttribute="bottom" id="NbO-mY-8Ks"/>
+                <constraint firstItem="EuM-rM-QPo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Wu9-rd-8Kr"/>
+                <constraint firstAttribute="trailing" secondItem="O2w-29-Kt0" secondAttribute="trailing" id="XDb-dU-Abp"/>
+                <constraint firstItem="4fi-zj-NEb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cLo-WX-POc"/>
+                <constraint firstItem="4fi-zj-NEb" firstAttribute="top" secondItem="O2w-29-Kt0" secondAttribute="bottom" constant="1" id="oKc-sh-Oig"/>
+                <constraint firstItem="EuM-rM-QPo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wPg-h2-vTd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ClassifiedManagement" destination="g36-mv-ENL" id="yhv-3Y-svH"/>
+                <outlet property="bottomView" destination="4fi-zj-NEb" id="Jj2-Qp-Pnm"/>
+                <outlet property="confirmBtn" destination="JUd-Y4-Rs1" id="NFd-5p-mw8"/>
+                <outlet property="oneTableView" destination="EuM-rM-QPo" id="rJm-mz-8h0"/>
+                <outlet property="twoTableView" destination="O2w-29-Kt0" id="aXP-ka-aRv"/>
+            </connections>
+            <point key="canvasLocation" x="211.59420289855075" y="-57.589285714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

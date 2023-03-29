@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SVBigClassView">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="318"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uHY-m0-ccI">
+                    <rect key="frame" x="0.0" y="40" width="371" height="40"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FBX-Cv-hvv">
+                            <rect key="frame" x="80.5" y="0.0" width="210" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7i5-Na-xTD">
+                                    <rect key="frame" x="130" y="2.5" width="80" height="35"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="Awu-qL-n3U"/>
+                                        <constraint firstAttribute="width" constant="80" id="l2n-0B-Ykd"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" title="服务类型">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="sexBankgroundImage"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UsE-Sp-ACE">
+                                    <rect key="frame" x="0.0" y="2.5" width="80" height="35"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="XI8-57-tD4"/>
+                                        <constraint firstAttribute="width" constant="80" id="bVt-Lt-qnk"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" title="产品类型">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" title="产品类型" backgroundImage="sexBankgroundImage">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="7i5-Na-xTD" firstAttribute="centerY" secondItem="FBX-Cv-hvv" secondAttribute="centerY" id="2f3-XG-aCN"/>
+                                <constraint firstAttribute="trailing" secondItem="7i5-Na-xTD" secondAttribute="trailing" id="CLq-ap-7CP"/>
+                                <constraint firstItem="UsE-Sp-ACE" firstAttribute="centerY" secondItem="FBX-Cv-hvv" secondAttribute="centerY" id="DZf-az-ymf"/>
+                                <constraint firstAttribute="width" constant="210" id="Fzv-gu-a3K"/>
+                                <constraint firstItem="UsE-Sp-ACE" firstAttribute="leading" secondItem="FBX-Cv-hvv" secondAttribute="leading" id="Ve8-me-Tqv"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="FBX-Cv-hvv" secondAttribute="bottom" id="KZE-rW-X8C"/>
+                        <constraint firstItem="FBX-Cv-hvv" firstAttribute="centerY" secondItem="uHY-m0-ccI" secondAttribute="centerY" id="YWb-CM-V72"/>
+                        <constraint firstAttribute="height" constant="40" id="dwd-Gm-nfZ"/>
+                        <constraint firstItem="FBX-Cv-hvv" firstAttribute="centerX" secondItem="uHY-m0-ccI" secondAttribute="centerX" id="k3R-Qx-Wf8"/>
+                        <constraint firstItem="FBX-Cv-hvv" firstAttribute="top" secondItem="uHY-m0-ccI" secondAttribute="top" id="tEe-8Y-Zui"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jli-Yd-ciW">
+                    <rect key="frame" x="0.0" y="267" width="371" height="1"/>
+                    <color key="backgroundColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="IjT-3p-7ig"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffG-Jp-mwS">
+                    <rect key="frame" x="0.0" y="268" width="185.5" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ePP-12-vX0"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.2627124488" green="0.2627638578" blue="0.26270923019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOp-jq-PaP">
+                    <rect key="frame" x="185.5" y="268" width="185.5" height="50"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="0.2627124488" green="0.2627638578" blue="0.26270923019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9g-Hx-PmD">
+                    <rect key="frame" x="185" y="268" width="1" height="50"/>
+                    <color key="backgroundColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="6Bm-rf-uQb"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入商品一级分类" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eRw-ko-zdX">
+                    <rect key="frame" x="35.5" y="139" width="300" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2C8-jm-g0r"/>
+                        <constraint firstAttribute="width" constant="300" id="JJG-dm-bIK"/>
+                    </constraints>
+                    <color key="textColor" red="0.2627124488" green="0.2627638578" blue="0.26270923019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sOp-jq-PaP" firstAttribute="height" secondItem="ffG-Jp-mwS" secondAttribute="height" id="0ex-BR-YCb"/>
+                <constraint firstAttribute="trailing" secondItem="uHY-m0-ccI" secondAttribute="trailing" id="2Ya-9F-T1B"/>
+                <constraint firstAttribute="bottom" secondItem="ffG-Jp-mwS" secondAttribute="bottom" id="6a0-nc-neF"/>
+                <constraint firstItem="c9g-Hx-PmD" firstAttribute="top" secondItem="jli-Yd-ciW" secondAttribute="bottom" id="9z9-8E-Kyo"/>
+                <constraint firstAttribute="trailing" secondItem="jli-Yd-ciW" secondAttribute="trailing" id="H7i-Wh-7ez"/>
+                <constraint firstItem="ffG-Jp-mwS" firstAttribute="top" secondItem="jli-Yd-ciW" secondAttribute="bottom" id="NJ3-K1-6Wd"/>
+                <constraint firstItem="jli-Yd-ciW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Yxy-Zl-rHg"/>
+                <constraint firstItem="ffG-Jp-mwS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eFl-ZM-lnt"/>
+                <constraint firstAttribute="trailing" secondItem="sOp-jq-PaP" secondAttribute="trailing" id="eZc-eG-aiB"/>
+                <constraint firstAttribute="bottom" secondItem="c9g-Hx-PmD" secondAttribute="bottom" id="g2e-i1-zwQ"/>
+                <constraint firstItem="sOp-jq-PaP" firstAttribute="leading" secondItem="ffG-Jp-mwS" secondAttribute="trailing" id="hts-f8-snl"/>
+                <constraint firstItem="eRw-ko-zdX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="iAa-Lp-8YU"/>
+                <constraint firstAttribute="bottom" secondItem="sOp-jq-PaP" secondAttribute="bottom" id="kjC-Sf-idA"/>
+                <constraint firstItem="sOp-jq-PaP" firstAttribute="width" secondItem="ffG-Jp-mwS" secondAttribute="width" id="nwv-YC-EAH"/>
+                <constraint firstItem="c9g-Hx-PmD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="p5n-su-rtr"/>
+                <constraint firstItem="uHY-m0-ccI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pCL-j7-tlB"/>
+                <constraint firstItem="eRw-ko-zdX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="rrz-xc-Nf5"/>
+                <constraint firstItem="uHY-m0-ccI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="sfj-7k-P79"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bigCancelButton" destination="ffG-Jp-mwS" id="h19-Vj-Ixs"/>
+                <outlet property="bigClassName" destination="eRw-ko-zdX" id="Pgo-jK-7Q3"/>
+                <outlet property="bigDetermineButton" destination="sOp-jq-PaP" id="tyF-kQ-CCe"/>
+                <outlet property="oneButton" destination="UsE-Sp-ACE" id="Tol-Yh-a4U"/>
+                <outlet property="twoButton" destination="7i5-Na-xTD" id="5GW-9t-Lzn"/>
+            </connections>
+            <point key="canvasLocation" x="69" y="-185"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sexBankgroundImage" width="38" height="22"/>
+    </resources>
+</document>

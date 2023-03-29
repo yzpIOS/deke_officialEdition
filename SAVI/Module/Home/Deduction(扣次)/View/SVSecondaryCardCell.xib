@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SVSecondaryCardCell" rowHeight="166" id="KGk-i7-Jjw" customClass="SVSecondaryCardCell">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="183"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="371" height="182.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YWM-Lk-nOC">
+                        <rect key="frame" x="30" y="10" width="311" height="162.5"/>
+                        <color key="backgroundColor" red="0.90644806619999996" green="0.92040652040000004" blue="0.97255748509999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="280.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPX-zi-ye0">
+                        <rect key="frame" x="40" y="20" width="101.5" height="36"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间：4353554364235" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHH-pM-LDz">
+                        <rect key="frame" x="40" y="141.5" width="186" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="护发卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yk-Vz-3Cc">
+                        <rect key="frame" x="40" y="100.5" width="52" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLW-5Q-gMs">
+                        <rect key="frame" x="291" y="20" width="40" height="40"/>
+                        <color key="backgroundColor" red="0.32082051039999998" green="0.45363825559999998" blue="0.9490721822" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="GRw-bU-QkY"/>
+                            <constraint firstAttribute="width" constant="40" id="wcw-lE-Xfu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <state key="normal" title="充">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="chongBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6q1-Tw-qh8"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GLW-5Q-gMs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="0Z4-AD-IkG"/>
+                    <constraint firstAttribute="bottom" secondItem="YWM-Lk-nOC" secondAttribute="bottom" constant="10" id="C1O-2N-mct"/>
+                    <constraint firstItem="1yk-Vz-3Cc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="Ea5-9O-4rH"/>
+                    <constraint firstItem="YWM-Lk-nOC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="IkS-xH-gZN"/>
+                    <constraint firstAttribute="bottom" secondItem="KHH-pM-LDz" secondAttribute="bottom" constant="20" id="JaQ-jj-Ax0"/>
+                    <constraint firstItem="yPX-zi-ye0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="LaO-Yb-P8R"/>
+                    <constraint firstAttribute="trailing" secondItem="GLW-5Q-gMs" secondAttribute="trailing" constant="40" id="Mtu-5Y-nG6"/>
+                    <constraint firstItem="KHH-pM-LDz" firstAttribute="top" secondItem="1yk-Vz-3Cc" secondAttribute="bottom" constant="20" id="XgS-oi-wh0"/>
+                    <constraint firstItem="yPX-zi-ye0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="dqo-IL-Ikw"/>
+                    <constraint firstItem="YWM-Lk-nOC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="nGP-Eb-goR"/>
+                    <constraint firstAttribute="trailing" secondItem="YWM-Lk-nOC" secondAttribute="trailing" constant="30" id="vjm-R9-EnX"/>
+                    <constraint firstItem="KHH-pM-LDz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="zQN-15-GTe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chongBtn" destination="GLW-5Q-gMs" id="R1e-T4-LCR"/>
+                <outlet property="iconImage" destination="YWM-Lk-nOC" id="TI3-Yk-1xX"/>
+                <outlet property="money" destination="yPX-zi-ye0" id="krM-tt-wvg"/>
+                <outlet property="name" destination="1yk-Vz-3Cc" id="Etm-et-xmZ"/>
+                <outlet property="time" destination="KHH-pM-LDz" id="96q-JV-HJA"/>
+            </connections>
+            <point key="canvasLocation" x="78.985507246376812" y="57.924107142857139"/>
+        </tableViewCell>
+    </objects>
+</document>

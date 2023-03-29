@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SVSaveWarehousingView">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="178"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="入库审核" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exV-JE-tuM">
+                    <rect key="frame" x="160" y="20" width="61.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.2627124488" green="0.2627638578" blue="0.26270923019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="【入库并审核】货品会直接添加到系统库存" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZn-05-T1Q">
+                    <rect key="frame" x="64.5" y="63" width="252" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.42745098040000001" green="0.42745098040000001" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="【保存】确认审核收货后才会添加到系统库存" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXK-jN-T9N">
+                    <rect key="frame" x="64.5" y="94" width="265.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.42745098040000001" green="0.42745098040000001" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lg0-OA-zFD">
+                    <rect key="frame" x="80.5" y="128" width="100" height="40"/>
+                    <color key="backgroundColor" red="0.17254901959999999" green="0.72156862749999995" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="hxJ-B6-Kee"/>
+                        <constraint firstAttribute="height" constant="40" id="lgy-bA-MsK"/>
+                    </constraints>
+                    <state key="normal" title="保存">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yI1-Oq-8dO">
+                    <rect key="frame" x="200.5" y="128" width="100" height="40"/>
+                    <color key="backgroundColor" red="0.17254901959999999" green="0.72156862749999995" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="8Ub-oH-foh"/>
+                        <constraint firstAttribute="height" constant="40" id="gb7-Ik-jgV"/>
+                    </constraints>
+                    <state key="normal" title="入库并审核">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWF-fY-jCW">
+                    <rect key="frame" x="354" y="5" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="RCh-nc-YMA"/>
+                        <constraint firstAttribute="height" constant="22" id="uvW-fg-02Q"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="ic_deleteDiscount"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p7V-ds-S2N">
+                    <rect key="frame" x="180.5" y="110" width="20" height="68"/>
+                    <color key="backgroundColor" red="0.88235294119999996" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="Yzl-ZN-xwf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.88235294119999996" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="p7V-ds-S2N" firstAttribute="leading" secondItem="lg0-OA-zFD" secondAttribute="trailing" id="1GH-XY-tFW"/>
+                <constraint firstItem="ZWF-fY-jCW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="1q4-Ng-bxo"/>
+                <constraint firstAttribute="trailing" secondItem="ZWF-fY-jCW" secondAttribute="trailing" constant="5" id="2Js-sP-rvA"/>
+                <constraint firstAttribute="bottom" secondItem="yI1-Oq-8dO" secondAttribute="bottom" constant="10" id="3Ax-Y6-1R4"/>
+                <constraint firstAttribute="bottom" secondItem="lg0-OA-zFD" secondAttribute="bottom" constant="10" id="LGv-Ys-29j"/>
+                <constraint firstItem="exV-JE-tuM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="RCz-TP-rHu"/>
+                <constraint firstItem="YZn-05-T1Q" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SK6-7g-UrQ"/>
+                <constraint firstItem="p7V-ds-S2N" firstAttribute="top" secondItem="LXK-jN-T9N" secondAttribute="bottom" id="Wrf-9w-0kg"/>
+                <constraint firstItem="LXK-jN-T9N" firstAttribute="top" secondItem="YZn-05-T1Q" secondAttribute="bottom" constant="15" id="XYs-l5-mY0"/>
+                <constraint firstItem="YZn-05-T1Q" firstAttribute="top" secondItem="exV-JE-tuM" secondAttribute="bottom" constant="25" id="aOF-ea-0dK"/>
+                <constraint firstAttribute="bottom" secondItem="p7V-ds-S2N" secondAttribute="bottom" id="suE-92-KAL"/>
+                <constraint firstItem="LXK-jN-T9N" firstAttribute="leading" secondItem="YZn-05-T1Q" secondAttribute="leading" id="tij-3H-smg"/>
+                <constraint firstItem="exV-JE-tuM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wbS-dv-H5b"/>
+                <constraint firstItem="yI1-Oq-8dO" firstAttribute="leading" secondItem="p7V-ds-S2N" secondAttribute="trailing" id="x22-8l-TeC"/>
+                <constraint firstItem="p7V-ds-S2N" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xNX-Wk-9qW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="deleteButton" destination="ZWF-fY-jCW" id="r4B-v0-Y5m"/>
+                <outlet property="saveOneButton" destination="lg0-OA-zFD" id="7bj-WC-2iP"/>
+                <outlet property="saveTwoButton" destination="yI1-Oq-8dO" id="jml-QR-pkN"/>
+            </connections>
+            <point key="canvasLocation" x="9.5" y="-270"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_deleteDiscount" width="22" height="22"/>
+    </resources>
+</document>

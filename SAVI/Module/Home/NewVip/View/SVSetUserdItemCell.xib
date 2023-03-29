@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="SVSetUserdItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="389" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYq-oE-pRj">
+                        <rect key="frame" x="20" y="20" width="349" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="GpG-SC-UkD"/>
+                        </constraints>
+                        <state key="normal" title="商城ID">
+                            <color key="titleColor" red="0.40784313729999999" green="0.40784313729999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgH-jK-N1E">
+                        <rect key="frame" x="363" y="10" width="16" height="22"/>
+                        <state key="normal" image="cancel_red"/>
+                        <connections>
+                            <action selector="removeClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="B4L-nB-ACj"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="pYq-oE-pRj" secondAttribute="trailing" constant="20" id="DqI-G9-ic3"/>
+                    <constraint firstAttribute="trailing" secondItem="DgH-jK-N1E" secondAttribute="trailing" constant="10" id="Oqs-JB-xgN"/>
+                    <constraint firstItem="DgH-jK-N1E" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ZY6-0O-KJQ"/>
+                    <constraint firstItem="pYq-oE-pRj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="sVS-5I-dyQ"/>
+                    <constraint firstItem="pYq-oE-pRj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="vqI-Rk-rqR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="removeBtn" destination="DgH-jK-N1E" id="bqH-Ky-YFY"/>
+                <outlet property="selectBtn" destination="pYq-oE-pRj" id="RJK-2k-RtQ"/>
+            </connections>
+            <point key="canvasLocation" x="172" y="128"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cancel_red" width="24" height="24"/>
+    </resources>
+</document>

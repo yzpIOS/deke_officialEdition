@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="KGk-i7-Jjw" customClass="SVSeveralCopiesCell">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="323" height="86.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Np-wG-VYx">
+                        <rect key="frame" x="0.0" y="0.0" width="81" height="86.5"/>
+                        <state key="normal" title="1份">
+                            <color key="titleColor" red="0.99215686274509807" green="0.64313725490196072" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="oneResponseEvent:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eAT-VS-6Wx"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBF-yf-huE">
+                        <rect key="frame" x="81" y="0.0" width="80.5" height="86.5"/>
+                        <state key="normal" title="2份">
+                            <color key="titleColor" red="0.2627124488" green="0.2627638578" blue="0.26270923019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="twoResponseEvent:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1hk-Ok-ffb"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocr-BA-3Ou">
+                        <rect key="frame" x="161.5" y="0.0" width="81" height="86.5"/>
+                        <state key="normal" title="3份">
+                            <color key="titleColor" red="0.2627124488" green="0.2627638578" blue="0.26270923019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="threeResponseEvent:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ipm-KM-i2I"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLV-wa-kmk">
+                        <rect key="frame" x="242.5" y="0.0" width="80.5" height="86.5"/>
+                        <state key="normal" title="4份">
+                            <color key="titleColor" red="0.2627124488" green="0.2627638578" blue="0.26270923019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="fourresponseEvesnt:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9i4-Sx-bXG"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eLV-wa-kmk" firstAttribute="height" secondItem="0Np-wG-VYx" secondAttribute="height" id="1ck-p0-b1x"/>
+                    <constraint firstItem="0Np-wG-VYx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3af-kE-9PI"/>
+                    <constraint firstItem="uBF-yf-huE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BGJ-9f-9sq"/>
+                    <constraint firstAttribute="trailing" secondItem="eLV-wa-kmk" secondAttribute="trailing" id="CED-5h-Tvw"/>
+                    <constraint firstItem="eLV-wa-kmk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ca9-Z5-WgQ"/>
+                    <constraint firstAttribute="bottom" secondItem="uBF-yf-huE" secondAttribute="bottom" id="LPX-OE-eot"/>
+                    <constraint firstItem="uBF-yf-huE" firstAttribute="leading" secondItem="0Np-wG-VYx" secondAttribute="trailing" id="Ne8-e8-6y0"/>
+                    <constraint firstAttribute="bottom" secondItem="ocr-BA-3Ou" secondAttribute="bottom" id="PD0-kV-eeC"/>
+                    <constraint firstItem="ocr-BA-3Ou" firstAttribute="height" secondItem="0Np-wG-VYx" secondAttribute="height" id="QXJ-YN-b1P"/>
+                    <constraint firstItem="ocr-BA-3Ou" firstAttribute="width" secondItem="0Np-wG-VYx" secondAttribute="width" id="XtF-dC-X20"/>
+                    <constraint firstItem="ocr-BA-3Ou" firstAttribute="leading" secondItem="uBF-yf-huE" secondAttribute="trailing" id="c6D-yC-bfb"/>
+                    <constraint firstItem="eLV-wa-kmk" firstAttribute="leading" secondItem="ocr-BA-3Ou" secondAttribute="trailing" id="cLC-Ca-xr3"/>
+                    <constraint firstItem="ocr-BA-3Ou" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="h1j-Gg-94M"/>
+                    <constraint firstItem="uBF-yf-huE" firstAttribute="width" secondItem="0Np-wG-VYx" secondAttribute="width" id="jWW-9x-aHf"/>
+                    <constraint firstItem="eLV-wa-kmk" firstAttribute="width" secondItem="0Np-wG-VYx" secondAttribute="width" id="pWM-6r-eRO"/>
+                    <constraint firstItem="0Np-wG-VYx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vSV-2C-vTO"/>
+                    <constraint firstAttribute="bottom" secondItem="eLV-wa-kmk" secondAttribute="bottom" id="wME-yd-0VG"/>
+                    <constraint firstItem="uBF-yf-huE" firstAttribute="height" secondItem="0Np-wG-VYx" secondAttribute="height" id="zRw-46-hUA"/>
+                    <constraint firstAttribute="bottom" secondItem="0Np-wG-VYx" secondAttribute="bottom" id="zy6-nD-iZI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="severalFourButton" destination="eLV-wa-kmk" id="xWz-hY-Xac"/>
+                <outlet property="severalOneButton" destination="0Np-wG-VYx" id="GHF-Gt-jrN"/>
+                <outlet property="severalThreeButton" destination="ocr-BA-3Ou" id="aVz-Hj-hqy"/>
+                <outlet property="severalTwoButton" destination="uBF-yf-huE" id="J1X-mr-Nhq"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="73.5"/>
+        </tableViewCell>
+    </objects>
+</document>

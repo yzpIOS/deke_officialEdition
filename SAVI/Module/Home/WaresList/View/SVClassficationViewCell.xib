@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="57" id="KGk-i7-Jjw" customClass="SVClassficationViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="429" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="429" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Check" translatesAutoresizingMaskIntoConstraints="NO" id="ll9-i6-wdC">
+                        <rect key="frame" x="101" y="23.5" width="13" height="10"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNE-Hg-cgj">
+                        <rect key="frame" x="129" y="20.5" width="290" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dNE-Hg-cgj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Yqf-D2-Z6J"/>
+                    <constraint firstAttribute="trailing" secondItem="dNE-Hg-cgj" secondAttribute="trailing" constant="10" id="aK7-U3-zsy"/>
+                    <constraint firstItem="ll9-i6-wdC" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1:2" id="agh-cE-1bl"/>
+                    <constraint firstItem="ll9-i6-wdC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eSQ-rt-5pu"/>
+                    <constraint firstItem="dNE-Hg-cgj" firstAttribute="leading" secondItem="ll9-i6-wdC" secondAttribute="trailing" constant="15" id="nya-Ws-g7o"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="icon" destination="ll9-i6-wdC" id="Uri-dU-xVO"/>
+                <outlet property="titleLabel" destination="dNE-Hg-cgj" id="nDm-Qc-45b"/>
+            </connections>
+            <point key="canvasLocation" x="152.89855072463769" y="82.03125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Check" width="13" height="10"/>
+    </resources>
+</document>

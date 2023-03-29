@@ -1,0 +1,287 @@
+//
+//  PrefixHeader.pch
+//  SAVI
+//
+//  Created by Sorgle on 17/5/2.
+//  Copyright © 2017年 Sorgle. All rights reserved.
+//  bug版本
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//导入WKWebView库
+#import <WebKit/WebKit.h>
+
+//--- 第三方 ---//
+//网络请求
+#import "SVSaviTool.h"
+//弹框提示的第三方
+#import "MBProgressHUD.h"
+//SDWedImane
+#import "UIImageView+WebCache.h"
+//键盘
+#import "IQKeyboardManager.h"
+//字典互转模型
+#import "MJExtension.h"
+//上拉刷新，下拉加载更多
+#import "MJRefresh.h"
+//友盟
+#import "UMSocial.h"
+//图表
+#import "PNChart.h"
+//约束
+#import "Masonry.h"
+//图片轮播
+#import "SDCycleScrollView.h"
+//类似微信弹框
+#import "YCXMenu.h"
+#import "SVProgressHUD.h"
+//--- 类 ---//
+//用户单例
+#import "SVUserManager.h"
+//模型
+#import "NSObject+Model.h"
+//判断是否是空
+#import "SVTool.h"
+//扫一扫
+#import "SGQRCodeScanningVC.h"//这个是集成第三方的，现在用的是这个
+#import "SVScanVC.h"//这个是自己写的，这个已经被废除
+//加密类
+#import "JWXUtils.h"
+//时间类
+#import "SVDateTool.h"
+//提示更新的
+#import "QJCheckVersionUpdate.h"
+//推荐给好友
+#import "ActionSheetView.h"
+//--- 控制器 ---//
+//添加商品
+#import "SVNewWaresVC.h"
+//添加会员
+#import "SVNewVipVC.h"
+//加载页面
+#import "SVWebViewVC.h"
+#import "UIDevice+TFDevice.h"
+#import "AppDelegate.h"
+#import "UIViewController+BackButtonHandler.h"
+#import "UIColor+SVcolorManager.h"
+#import "YRClassSafeCategory.h"
+#import "WMPageController.h"
+#import "NSString+SFK_Extention.h"
+#import "UIImage+BBCompress.h"
+#import "ConnecterManager.h"
+#import "SVDataDef.h"
+#import "SVHTTPResponse.h"
+
+#define APPID  @"1128257396"
+#define ScreenH             [[UIScreen mainScreen] bounds].size.height
+#define ScreenW             [[UIScreen mainScreen] bounds].size.width
+
+#define NumbersWithDot     @"0123456789.\n"
+#define NumbersWithoutDot  @"0123456789\n"
+
+
+// 多规格
+#import "JXUIKit.h"
+#import "UIView+SDAutoLayout.h"
+
+#import "GoodsModel.h"
+
+#define MJWeakSelf __weak typeof(self) weakSelf = self;
+
+#define kWidth          [UIScreen mainScreen].bounds.size.width
+#define kHeight         [UIScreen mainScreen].bounds.size.height
+#define kSize(a)        ceil((a)*([UIScreen mainScreen].bounds.size.width/375.0))
+
+#define WhiteColor [UIColor whiteColor]
+#define KBtncol [UIColor redColor]//按钮背景颜色
+#define KLightGrayLinecol [UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1]
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+
+/*
+ 适配iPhone X
+ */
+/// 高度系数 812.0 是iPhoneX的高度尺寸，667.0表示是iPhone 8 的高度，如果你觉的它会变化，那我也很无奈
+#define kWJHeightCoefficient (ScreenH == 812.0 ? 667.0/667.0 : ScreenH/667.0)
+//导航的高度
+#define TopHeight (ScreenH == 812.0 ? 88 : 64)
+/// 底部宏，吃一见长一智吧，别写数字了
+#define BottomHeight (ScreenH == 812.0 ? 20 : 0)
+///与iPone身高差76
+//#define PoorHeight (ScreenH == 812.0 ? 76 : 0)
+#define PoorHeight (ScreenH == 812.0 ? 50 : 0)
+#define kTabbarHeight (IS_iPhoneX ? (49.f+34.f) : 49.f)
+
+//判断是否iPhone X
+#define IS_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//#ifdef __OBJC__
+//#import <Foundation/Foundation.h>
+//#import <UIKit/UIKit.h>
+
+
+
+//#ifdef DEBUG
+////#define NSLog(...) {};
+//#else
+//#define NSLog(...) {};
+//#endif
+
+
+#define LBXScan_Define_Native  //包含native库
+#define LBXScan_Define_ZXing   //包含ZXing库
+#define LBXScan_Define_ZBar   //包含ZBar库
+#define LBXScan_Define_UI     //包含界面库
+
+
+//按钮的切角
+#define ButtonCorner 4
+#define BottomViewHeight 70
+#define BottomButtonHeight 40
+#define BottomButtomWidth  (ScreenW-20*3)/2
+/// 为空判断
+#define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
+#define kArrayIsEmpty(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)
+#define kDictIsEmpty(dic) (dic == nil || [dic isKindOfClass:[NSNull class]] || dic.allKeys == 0)
+
+#define ALERT(msg)  [[[UIAlertView alloc]initWithTitle:@"" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show]
+
+#define RGBA(_R, _G, _B, _A) ([UIColor colorWithRed:_R / 255.0f green:_G / 255.0f blue:_B / 255.0f alpha:_A])
+//淡灰背影色
+#define BackgroundColor   ([UIColor colorWithRed:239 / 255.0f green:239 / 255.0f blue:244 / 255.0f alpha:1])
+//浅蓝背影色
+#define BlueBackgroundColor   ([UIColor colorWithRed:225 / 255.0f green:235 / 255.0f blue:235 / 255.0f alpha:1])
+#define GreenBackgroundColor   ([UIColor colorWithRed:49/255.0f green:193/255.0f blue:123/255.0f alpha:1])
+//导航栏的颜色
+#define navigationBackgroundColor   ([UIColor colorWithRed:82/255.0f green:116/255.0f blue:242/255.0f alpha:1])
+//字体颜色
+//不是纯黑的字体
+#define GlobalFontColor   ([UIColor colorWithRed:67/255.0f green:67/255.0f blue:67/255.0f alpha:1])
+//浅灰色
+#define GreyFontColor    ([UIColor colorWithRed:182/255.0f green:182/255.0f blue:182/255.0f alpha:1])
+//浅红色
+#define RedFontColor    ([UIColor colorWithRed:253/255.0f green:100/255.0f blue:103/255.0f alpha:1])
+//提示字体色
+#define placeholderFontColor    ([UIColor colorWithRed:199/255.0f green:199/255.0f blue:205/255.0f alpha:1])
+
+#define searchBarBackgroundColorS [UIColor colorWithRed:232/255.0f green:240/255.0f blue:238/255.0f alpha:1.0]
+//点击按钮时的背影色
+#define clickButtonBackgroundColor [UIColor colorWithRed:175/255.0f green:255/255.0f blue:215/255.0f alpha:1]
+//被选中的颜色
+#define selectedColor [UIColor colorWithRed:253/255.0f green:164/255.0f blue:63/255.0f alpha:1]
+//不能点击的按钮颜色
+#define NOEnabledButtonColor [UIColor colorWithRed:165/255.0f green:222/255.0f blue:165/255.0f alpha:1]
+//不能点击的按钮的字体颜色
+#define NOEnabledButtonTextColor [UIColor colorWithRed:223/255.0f green:241/255.0f blue:220/255.0f alpha:1]
+
+//cell的分割线颜色
+#define cellSeparatorColor    ([UIColor colorWithRed:235/255.0f green:235/255.0f blue:235/255.0f alpha:1])
+//分割线颜色
+#define threadColor  ([UIColor colorWithRed:210/255.0f green:210/255.0f blue:210/255.0f alpha:1])
+// 安卓的几个色值
+#define an_gradeColor  ([UIColor colorWithHexString:@"#999999"])
+#define an_blackColor  ([UIColor colorWithHexString:@"#333333"])
+#define an_redColor  ([UIColor colorWithHexString:@"ff5c00"])
+//透明色
+//[UIColor clearColor]
+// 判断是否是iPhone X
+#define KIsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+// 判断是否是 iPhone6plus  iPhone7plus iPhone8plus
+#define IS_iPhone7_Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(1125, 2001), [[UIScreen mainScreen] currentMode].size) || CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)) : NO)
+
+#define IS_iPhone_5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+/*
+ 闪退  大部分啊  都是空数组  没网络  或者 数组越界 内存漏了
+ 1.函数无限递归爆栈（表视图返回Cell和返回行高的方法互相调用）
+ 2.某对象无法解析某个方法（没做类型转换、或者代理没实现某个方法）
+ 3.访问了某个已经被释放的对象（ARC之后不太有）
+ 4.从Bundle加载了不存在或者不支持的对象（图片素材之类的）
+ 5.子线程阻塞主UI线程过久
+ 
+ 一般用户所谓的秒退应该就是程序crash了。   从开发的角度来讲一般有以下几个原因：
+ 1.操作了不该操作的对象，野指针之类的。   
+ 2.对内存警告处理不当。   
+ 3.主线程UI长时间卡死，被系统杀掉。   
+ 4.程序内部异常逻辑没处理好。   
+ 5.sdk版本差异没处理好。
+ 6.不应该一直开着全局断点
+ 
+ ResponseEvent
+ 
+ */
+
+//线上接口
+#define URLhead @"http://wpf.decerp.cc"
+//#define URLhead @"http://192.168.1.179:8003"
+//#define URLhead @"http://192.168.1.179:8003"
+//http://192.168.1.179:8003/
+//本地接口
+//#define URLhead @"http://192.168.1.220:97"
+//外网97接口
+
+//#define URLhead @"http://119.23.132.106:97"
+//#define URLhead @"http://api.decerp.cn/"
+
+//#define URLhead @"http://119.23.132.106:97"
+//#define URLhead @"http://192.168.1.179:8003"
+
+//#define URLhead @"http://119.23.132.106:1001"
+
+//#define URLhead @"http://192.168.1.114:8002"
+
+//#define URLhead @"http://172.18.157.216:1001"
+//#define URLhead @"https://api1001.decerp.cc"
+
+//图片上传接口
+#define URLHeadPicture @"http://apiupload.decerp.cc"
+//展示图片接口
+#define URLHeadPortrait @"http://res.decerp.cc"
+
+//当URL拼接里有中文时，需要进行编码一下
+//strURL = [strURL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+
+//__weak typeof(self) weakSelf = self;
+
+//[UIView animateWithDuration:.3 animations:^{
+//    self.DateView.frame = CGRectMake(0, ScreenH-450, ScreenW, 450);
+//}];
+
+// 解决控制台打印数据不完整
+//#ifdef DEBUG
+//
+//#define NSLog(FORMAT, ...) fprintf(stderr, "%s:%zu\t%s\n", [[[NSString stringWithUTF8String: __FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat: FORMAT, ## __VA_ARGS__] UTF8String]);
+//
+//#else
+//
+//#define NSLog(FORMAT, ...) nil
+//
+//#endif
+//
+//#ifdef DEBUG
+//#define NSLog(FORMAT, ...) fprintf(stderr, "%s:%zd\t%s\n", [[[NSString stringWithUTF8String: __FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat: FORMAT, ## __VA_ARGS__] UTF8String]);
+//#else
+//#define NSLog(FORMAT, ...) nil
+//#endif
+
+
+//
+
+#if DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s",__func__)、
+#else
+#define NSLog(...)
+#define debugMethod()
+#endif
+
+
+//http://decerp.cc/
+//小三key----eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIzNzc2MjA4NCIsImlhdCI6MTUwNTk3OTk5MywianRpIjpmYWxzZX0.6k8GdMP0lBEVAUk609Xt7rEuX3GvzgW5o9XGpyFeB84
+    //本地库存的小三key：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIzNzc2MjA4NCIsImlhdCI6MTUwNzc3NDAzMCwianRpIjpmYWxzZX0.2hHFTfuAF6pR7s7yVancW4stoLoc-cwpbmQx0YF9V-s
+
+#endif /* PrefixHeader_pch */
+
+
+
